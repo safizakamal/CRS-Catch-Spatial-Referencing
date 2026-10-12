@@ -11,7 +11,6 @@ export default defineConfig(({command, mode}) => {
   
   const isProd = command === 'build' || mode === 'production';
   const base = process.env.VITE_BASE_PATH || process.env.BASE_PATH || (isProd ? '/CRS-Catch-Spatial-Referencing/' : '/');
-
   return {
     base,
     plugins: [react(), tailwindcss()],
