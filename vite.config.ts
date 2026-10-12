@@ -5,11 +5,12 @@ import {defineConfig} from 'vite';
 
 export default defineConfig(({command, mode}) => {
   // Configurable base path:
-  // - Defaults to '/crs-catch/' for production builds (GitHub Pages repository named crs-catch)
+  // - Defaults to '/crs-catch-spatial-referencing/' for production builds (GitHub Pages repository named crs-catch)
   // - Can be overridden dynamically via VITE_BASE_PATH or BASE_PATH env variables
   // - Defaults to '/' during local development
+  
   const isProd = command === 'build' || mode === 'production';
-  const base = process.env.VITE_BASE_PATH || process.env.BASE_PATH || (isProd ? '/crs-catch/' : '/');
+  const base = process.env.VITE_BASE_PATH || process.env.BASE_PATH || (isProd ? '/CRS-Catch-Spatial-Referencing/' : '/');
 
   return {
     base,
