@@ -1,0 +1,10 @@
+{
+  "name": "CRS Catch! Spatial Referencing",
+  "description": "Interactive gesture-controlled GIS educational game for learning Geographic Coordinate Systems (GCS) vs Projected Coordinate Systems (PCS).",
+  "requestFramePermissions": [
+    "camera"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
